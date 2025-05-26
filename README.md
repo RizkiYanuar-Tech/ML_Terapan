@@ -1,43 +1,33 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Muhammad Rizki Yanuar
 
 ## Domain Proyek
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+*Liver* atau hati adalah organ yang vital bagi manusia, organ ini terletak di dalam rongga perut sebelah kanan, tepatnya di bawah diafragma. Beberapa fungsi kerja liver antara lain sebagai penawar dan penetralisir racun, mengatur sirkulasi hormon, mengatur komposisi darah yang mengadung lemak, gula, protein, dan membuat empedu, dimana zat yang membantu percernaan lemak. Penyakit *liver* merupakan suatu gangguan pada setiap fungsi *liver*, ketika *liver* kehilangan fungsi-fungsi tersebut dapat menyebabkan kerusakan yang signifikan pada tubuh [Klasifikasi Pasien Penderita Penyakit Liver dengan Pendekatan Machine Learning]. 
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-- Format Referensi dapat mengacu pada penulisan sitasi [IEEE](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf), [APA](https://www.mendeley.com/guides/apa-citation-guide/) atau secara umum seperti [di sini](https://penerbitdeepublish.com/menulis-buku-membuat-sitasi-dengan-mudah/)
-- Sumber yang bisa digunakan [Scholar](https://scholar.google.com/)
+Hasil analisis data kematian yang dirilis oleh *British Livir Trust* pada tahun 2019 mengungkapkan bahwa penyakit hati adalah penyebab kematian terbesar di Inggris dan Wales pada rentang usia 35-49 tahun, dimana pada penelitian tersebut juga diperkirakan bahwa penyakit hati akan menggeser penyakit jantung sebagai penyebab terbesar kematian dini dalam beberapa tahun mendatang, permalasahan yang biasanya terjadi pada penyakit *liver* adalah mengenali penyakit tersebut sejak dini, bahkan ketika penyakiy tersebut sudah menyebar. Padahal pemeriksaan kesehatan secara berkala diperlukan untuk mendeteksi penyakit *liver* sejak dini, sehingga dapat di tangani lebih cepat dan tingkat kematian karena penyakit *liver* dapat menurun [Analisis Pengaruh Komposisi Data Training dan Data Testing].
+
+## Referensi
+
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
+Penyakit hati adalah penyebab kematian terbesar di Inggris dan Wales pada rentang usia 35-49 tahun, dan penyakit hati akan menggeser penyakit jantung sebagai penyebab terbesar kematian dini dalam beberapa tahun mendatang. Pemeriksaan kesehatan secara berkala diperlukan untuk mendeteksi penyakit liver sejak dini.
 
-Bagian laporan ini mencakup:
+Proyek ini bertujuan Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan besar memerlukan perawatan kesehatan mental atau tidak, berdasarkan atribut survei yang diberikan.
 
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- Banyak individu dengan potensi gangguan kesehatan mental tidak terdeteksi secara dini, baik karena keterbatasan akses terhadap layanan psikologis maupun kurangnya kesadaran individu terhadap kondisi mereka sendiri.
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan mengalami penyakit liver atau tidak
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+### Solution statements
+- Implementasi dan membandingkan model klasifikasi untuk menemukan model terbaik
+- Melakukan hyperparameter tuning pada model untuk mengoptimalkan hasil klasifikasi dan meningkatkan akurasi prediksi
 
 ## Data Understanding
 Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
