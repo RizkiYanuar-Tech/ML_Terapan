@@ -30,48 +30,63 @@ Menjelaskan tujuan dari pernyataan masalah:
 - Melakukan hyperparameter tuning pada model untuk mengoptimalkan hasil klasifikasi dan meningkatkan akurasi prediksi
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
-
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [Indian Liver Dataset](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records). 
 
 ### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+- Age of the patient: Umur pasien yang check liver.
+- Gender of the patient: Jenis kelamin pasien.
+- Total Bilirubin: Pigmen kuning yang ditemukan pada darah, empedu dan urin
+- Direct Bilirubin: Bilirubin yang diolah oleh hati dan menjadi mudah larut dalam air
+- Alkaline Phosphotase: Enzim di seluruh tubuh untuk mineralisasi tulang dan produksi empedu, Kadar ALP tinggi mengindikasikan gangguan fungsi hati
+- Alamine Aminostransferase: Enzim yang sebagian besar ada di hati, peningkatan kadar Alamine menunjukkan adanya kerusakan atau cedera pada sel hati
+- Aspartate Aminotransferase: Enzim yang berperan dalam metabolisme asam amino, peningkatan kadar AST dalam darah mengindikasikan adanya kerusakan sel hati, penyakit hati
+- Total Proteins: Jumlah protein yang terdapat dalam darah
+- Albumin: Protein yang dihasilkan hati untuk mensintesis sel hati
+- Albumin and Globulin Ratio: Perbandingan kadar albumin dan globulin dalam darah
+- Dataset: Label pasien terkena *liver* atau tidak
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+- Missing Value: Penanganan terhadap data yang hilang
+- Duplicate: Menghapus data yang memiliki duplikasi agar tidak bias data dan tidak mengalami overfitting pada saat evaluasi model.
+- Encoding: Transformasi data dengan mengubah nilai kategori ke bentuk numerik.
+- Split Data: Membagi data latih dan data uji dengan proporsi 80:20
 
 ## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Pada tahap ini, beberapa algoritma klasifikasi machine learning digunakan untuk memprediksi apakah seseorang mengalami penyakit liver atau tidak.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+  1. Random Forest
+     kumpulan dari banyak pohon keputusan (decision trees) yang dilatih dengan data acak dan subset fitur yang berbeda. Hasil akhir ditentukan berdasarkan voting mayoritas dari semua pohon.
 
+  Kelebihan
+  
+  a. Akurasi yang lebih tinggi daripada decision tree tunggal
+  
+  b. Lebih tahan terhadap overfitting
+  
+  c. Memberikan feature importance
+  
+  Kekurangan 
+  
+  a. Kurang interpretatif dibanding decision tree tunggal
+  
+  b. Sedikit lebih lama dalam pelatihan
+
+  2. Gradient Boosting
+     Gradient Boosting adalah sebuah teknik yang menggabungkan beberapa model yang lemah (weak model) menjadi sebuah model yang kuat.
+
+  Kelebihan
+
+  a. Akurasi yang tinggi: Gradient Boosting sering menghasilkan model yang akurat dan kuat, terutama ketika digunakan pada data yang kompleks dan tidak terstruktur.
+
+  b. Kecepatan komputasi yang cepat
+
+  Kekurangan:
+  
+  a. Memerlukan tuning yang cermat: Algoritma ini memerlukan tuning parameter yang cermat untuk mendapatkan model yang optimal.
+  
+  b. Mudah overfitting: Gradient Boosting dapat cenderung overfit pada data training jika tidak dilakukan pengaturan parameter yang baik.
+  
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
-
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
-
+- Akurasi: Mengukur proporsi prediksi yang benar dari keseluruhan prediksi.
+- Recall (Sensitivity) : Mengukur seberapa baik model dapat mendeteksi kasus positif.
+- Precision : Mengukur proporsi prediksi positif yang benar-benar positif.
