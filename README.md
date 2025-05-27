@@ -2,13 +2,13 @@
 
 ## Domain Proyek
 
-Krisis saat ini telah menyebabkan banyak lembaga keuangan di seluruh dunia mengambil langkah-langkah penting untuk menghindari risiko gagal bayar dari pelanggan yang meminjam dana. Maraknya kasus default utang konsumen mendorong para ahli untuk meninjau kembali standar dan praktik yang selama ini digunakan, guna memastikan perlindungan yang memadai bagi perusahaan dari peristiwa serupa di masa depan. [Loanification - Loan Approval Classification using Machine Learning
-Algorithms]. 
+Krisis saat ini telah menyebabkan banyak lembaga keuangan di seluruh dunia mengambil langkah-langkah penting untuk menghindari risiko gagal bayar dari pelanggan yang meminjam dana. Maraknya kasus default utang konsumen mendorong para ahli untuk meninjau kembali standar dan praktik yang selama ini digunakan, guna memastikan perlindungan yang memadai bagi perusahaan dari peristiwa serupa di masa depan [1].
 
-Bagi setiap bank atau lembaga keuangan, pengelolaan pinjaman dan pengendalian leverage merupakan tugas krusial dalam menjaga stabilitas dan efisiensi operasional. Tanpa model bisnis pinjaman-ke-simpanan yang dirancang dengan baik, bank tidak dapat menjalankan fungsinya secara optimal. Seiring kemajuan teknologi, mekanisme pemberian dan penanganan pinjaman mengalami transformasi signifikan, salah satunya melalui penerapan pembelajaran mesin (machine learning) dan ilmu data (data science) [Optimizing Bank Loan Approval with Binary Classification Method and Deep Learning Model].
+Bagi setiap bank atau lembaga keuangan, pengelolaan pinjaman dan pengendalian leverage merupakan tugas krusial dalam menjaga stabilitas dan efisiensi operasional. Tanpa model bisnis pinjaman-ke-simpanan yang dirancang dengan baik, bank tidak dapat menjalankan fungsinya secara optimal. Seiring kemajuan teknologi, mekanisme pemberian dan penanganan pinjaman mengalami transformasi signifikan, salah satunya melalui penerapan pembelajaran mesin (machine learning) dan ilmu data (data science)[2].
 
 ## Referensi
-
+[1]	K. Gupta, B. Chakrabarti, A. Ansari, S. S. Rautray, and M. Pandey, “Loanification-Loan Approval Classification using Machine Learning Algorithms.” [Online]. Available: https://ssrn.com/abstract=3833303
+[2]	A. Mahgoub, “Optimizing Bank Loan Approval with Binary Classification Method and Deep Learning Model,” Open Journal of Business and Management, vol. 12, no. 03, pp. 1970–2001, 2024, doi: 10.4236/ojbm.2024.123104.
 
 ## Business Understanding
 
@@ -95,6 +95,7 @@ Pada tahap ini, beberapa algoritma klasifikasi machine learning digunakan untuk 
   b. Mudah overfitting: Gradient Boosting dapat cenderung overfit pada data training jika tidak dilakukan pengaturan parameter yang baik.
   
 ## Evaluation
+
 - Akurasi: Mengukur proporsi prediksi yang benar dari keseluruhan prediksi.
 - Recall (Sensitivity) : Mengukur seberapa baik model dapat mendeteksi kasus positif.
 - Precision : Mengukur proporsi prediksi positif yang benar-benar positif.
