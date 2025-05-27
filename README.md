@@ -32,7 +32,7 @@ Menjelaskan tujuan dari pernyataan masalah:
 ## Data Understanding
 Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [Indian Liver Dataset](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records). 
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
+### Variabel-variabel pada ILPD dataset adalah sebagai berikut:
 - Age of the patient: Umur pasien yang check liver.
 - Gender of the patient: Jenis kelamin pasien.
 - Total Bilirubin: Pigmen kuning yang ditemukan pada darah, empedu dan urin
