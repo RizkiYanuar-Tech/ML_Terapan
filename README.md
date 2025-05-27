@@ -2,48 +2,56 @@
 
 ## Domain Proyek
 
-*Liver* atau hati adalah organ yang vital bagi manusia, organ ini terletak di dalam rongga perut sebelah kanan, tepatnya di bawah diafragma. Beberapa fungsi kerja liver antara lain sebagai penawar dan penetralisir racun, mengatur sirkulasi hormon, mengatur komposisi darah yang mengadung lemak, gula, protein, dan membuat empedu, dimana zat yang membantu percernaan lemak. Penyakit *liver* merupakan suatu gangguan pada setiap fungsi *liver*, ketika *liver* kehilangan fungsi-fungsi tersebut dapat menyebabkan kerusakan yang signifikan pada tubuh [Klasifikasi Pasien Penderita Penyakit Liver dengan Pendekatan Machine Learning]. 
+Krisis saat ini telah menyebabkan banyak lembaga keuangan di seluruh dunia mengambil langkah-langkah penting untuk menghindari risiko gagal bayar dari pelanggan yang meminjam dana. Maraknya kasus default utang konsumen mendorong para ahli untuk meninjau kembali standar dan praktik yang selama ini digunakan, guna memastikan perlindungan yang memadai bagi perusahaan dari peristiwa serupa di masa depan. [Loanification - Loan Approval Classification using Machine Learning
+Algorithms]. 
 
-Hasil analisis data kematian yang dirilis oleh *British Livir Trust* pada tahun 2019 mengungkapkan bahwa penyakit hati adalah penyebab kematian terbesar di Inggris dan Wales pada rentang usia 35-49 tahun, dimana pada penelitian tersebut juga diperkirakan bahwa penyakit hati akan menggeser penyakit jantung sebagai penyebab terbesar kematian dini dalam beberapa tahun mendatang, permalasahan yang biasanya terjadi pada penyakit *liver* adalah mengenali penyakit tersebut sejak dini, bahkan ketika penyakiy tersebut sudah menyebar. Padahal pemeriksaan kesehatan secara berkala diperlukan untuk mendeteksi penyakit *liver* sejak dini, sehingga dapat di tangani lebih cepat dan tingkat kematian karena penyakit *liver* dapat menurun [Analisis Pengaruh Komposisi Data Training dan Data Testing].
+Bagi setiap bank atau lembaga keuangan, pengelolaan pinjaman dan pengendalian leverage merupakan tugas krusial dalam menjaga stabilitas dan efisiensi operasional. Tanpa model bisnis pinjaman-ke-simpanan yang dirancang dengan baik, bank tidak dapat menjalankan fungsinya secara optimal. Seiring kemajuan teknologi, mekanisme pemberian dan penanganan pinjaman mengalami transformasi signifikan, salah satunya melalui penerapan pembelajaran mesin (machine learning) dan ilmu data (data science) [Optimizing Bank Loan Approval with Binary Classification Method and Deep Learning Model].
 
 ## Referensi
 
 
 ## Business Understanding
 
-Penyakit hati adalah penyebab kematian terbesar di Inggris dan Wales pada rentang usia 35-49 tahun, dan penyakit hati akan menggeser penyakit jantung sebagai penyebab terbesar kematian dini dalam beberapa tahun mendatang. Pemeriksaan kesehatan secara berkala diperlukan untuk mendeteksi penyakit liver sejak dini.
+Dalam industri perbankan dan keuangan, salah satu tantangan terbesar adalah mengidentifikasi nasabah yang berpotensi gagal bayar (default) sejak tahap awal proses aplikasi pinjaman. Keputusan yang tidak tepat dalam pemberian kredit dapat berdampak buruk terhadap stabilitas keuangan lembaga. Oleh karena itu, diperlukan sistem prediksi yang mampu mengevaluasi risiko kredit calon peminjam secara akurat dan efisien.
 
-Proyek ini bertujuan Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan besar memerlukan perawatan kesehatan mental atau tidak, berdasarkan atribut survei yang diberikan.
+Proyek ini bertujuan untuk mengembangkan model klasifikasi berbasis machine learning yang dapat memprediksi kemungkinan terjadinya gagal bayar pinjaman, dengan memanfaatkan data historis pelanggan dan berbagai atribut finansial lainnya. Model ini diharapkan dapat membantu lembaga keuangan dalam membuat keputusan pemberian pinjaman yang lebih tepat dan berbasis data.
 
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Banyak individu dengan potensi gangguan kesehatan mental tidak terdeteksi secara dini, baik karena keterbatasan akses terhadap layanan psikologis maupun kurangnya kesadaran individu terhadap kondisi mereka sendiri.
+- Banyak lembaga keuangan masih mengandalkan penilaian kredit konvensional yang tidak adaptif terhadap pola dan tren risiko baru.
+
+- Keterbatasan analisis manual membuat proses penilaian kredit rentan terhadap bias dan kesalahan prediksi.
+
+- Belum adanya sistem prediksi otomatis berbasis pembelajaran mesin yang secara akurat dapat mengklasifikasikan tingkat risiko gagal bayar dari calon peminjam.
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
-- Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan mengalami penyakit liver atau tidak
+- Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan akan menerima pinjaman atau tidak
 
 ### Solution statements
 - Implementasi dan membandingkan model klasifikasi untuk menemukan model terbaik
 - Melakukan hyperparameter tuning pada model untuk mengoptimalkan hasil klasifikasi dan meningkatkan akurasi prediksi
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [Indian Liver Dataset](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records). 
+Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [Loan Approval Classification](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data).
 
 ### Variabel-variabel pada ILPD dataset adalah sebagai berikut:
-- Age of the patient: Umur pasien yang check liver.
-- Gender of the patient: Jenis kelamin pasien.
-- Total Bilirubin: Pigmen kuning yang ditemukan pada darah, empedu dan urin
-- Direct Bilirubin: Bilirubin yang diolah oleh hati dan menjadi mudah larut dalam air
-- Alkaline Phosphotase: Enzim di seluruh tubuh untuk mineralisasi tulang dan produksi empedu, Kadar ALP tinggi mengindikasikan gangguan fungsi hati
-- Alamine Aminostransferase: Enzim yang sebagian besar ada di hati, peningkatan kadar Alamine menunjukkan adanya kerusakan atau cedera pada sel hati
-- Aspartate Aminotransferase: Enzim yang berperan dalam metabolisme asam amino, peningkatan kadar AST dalam darah mengindikasikan adanya kerusakan sel hati, penyakit hati
-- Total Proteins: Jumlah protein yang terdapat dalam darah
-- Albumin: Protein yang dihasilkan hati untuk mensintesis sel hati
-- Albumin and Globulin Ratio: Perbandingan kadar albumin dan globulin dalam darah
-- Dataset: Label pasien terkena *liver* atau tidak
+- person_age: Umur orang
+- person_gender: Jenis kelamin orang
+- person_education: Pendidikan terakhir
+- person_income: Pendapatan tahunan
+- person_emp_exp: Pengalaman bekerja -tahun
+- person_home_ownership: Status kepemilikan rumah
+- loan_amnt: Total pinjaman yang diminta
+- loan_intent: Tujuan pinjaman
+- loan_int_rate: Suku bunga pinjaman
+- loan_percent_income: Jumlah pinjaman sebagai persentase pendapatan tahunan
+- cb_person_cred_hist_length: Lama riwayat kredit dalam tahun
+- credit_score: Nilai kredit orang
+- previous_loan_defaults_on_file: Indikator tunggakan pinjaman sebelumnya
+- loan_status: Status persetujuan pinjaman
 
 ## Data Preparation
 - Missing Value: Penanganan terhadap data yang hilang
