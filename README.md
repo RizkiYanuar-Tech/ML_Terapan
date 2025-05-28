@@ -36,9 +36,9 @@ Menjelaskan tujuan dari pernyataan masalah:
 - Melakukan hyperparameter tuning pada model untuk mengoptimalkan hasil klasifikasi dan meningkatkan akurasi prediksi
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [Loan Approval Classification](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data).
+Dataset yang saya gunakan berasal dari kaggle: [Loan Approval Classification](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data). Dataset ini berisikan 45000 data dengan 14 atribut berikut atribut yang dimiliki:
 
-### Variabel-variabel pada ILPD dataset adalah sebagai berikut:
+### Variabel-variabel pada Loan Approval Classification dataset adalah sebagai berikut:
 - person_age: Umur orang
 - person_gender: Jenis kelamin orang
 - person_education: Pendidikan terakhir
