@@ -58,6 +58,7 @@ Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan d
 - Missing Value: Penanganan terhadap data yang hilang
 - Duplicate: Menghapus data yang memiliki duplikasi agar tidak bias data dan tidak mengalami overfitting pada saat evaluasi model.
 - Encoding: Transformasi data dengan mengubah nilai kategori ke bentuk numerik.
+- Outliers: Dilakukan pengechekan agar tidak mengganggu kinerja model
 - Split Data: Membagi data latih dan data uji dengan proporsi 80:20
 
 ## Modeling
