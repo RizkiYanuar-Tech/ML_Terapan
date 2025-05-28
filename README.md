@@ -8,6 +8,7 @@ Bagi setiap bank atau lembaga keuangan, pengelolaan pinjaman dan pengendalian le
 
 ## Referensi
 [1]	K. Gupta, B. Chakrabarti, A. Ansari, S. S. Rautray, and M. Pandey, “Loanification-Loan Approval Classification using Machine Learning Algorithms.” [Online]. Available: https://ssrn.com/abstract=3833303
+
 [2]	A. Mahgoub, “Optimizing Bank Loan Approval with Binary Classification Method and Deep Learning Model,” Open Journal of Business and Management, vol. 12, no. 03, pp. 1970–2001, 2024, doi: 10.4236/ojbm.2024.123104.
 
 ## Business Understanding
@@ -97,5 +98,18 @@ Pada tahap ini, beberapa algoritma klasifikasi machine learning digunakan untuk 
 ## Evaluation
 
 - Akurasi: Mengukur proporsi prediksi yang benar dari keseluruhan prediksi.
-- Recall (Sensitivity) : Mengukur seberapa baik model dapat mendeteksi kasus positif.
-- Precision : Mengukur proporsi prediksi positif yang benar-benar positif.
+
+- Recall (Sensitivity): Mengukur seberapa baik model dapat mendeteksi kasus positif.
+
+- Precision: Mengukur proporsi prediksi positif yang benar-benar positif.
+
+Hasil akurasi pada model Random Forest sebelum hyperparameter tuning:
+![Base Model Random Forest](https://github.com/user-attachments/assets/2d5ab4f3-b76d-4ef2-bb7e-8d0c088d4a4e)
+
+Setelah hyperparameter tuning:
+![Hyparameter](https://github.com/user-attachments/assets/47b81f6c-c081-43ad-aedd-1a245ab05837)
+![Hyperparameter Random Forest](https://github.com/user-attachments/assets/42662731-e3e5-4f30-b4d5-60322398ec33)
+
+Ditemukan bahwa parameter terbaik adalah 'n_estimators': 200, 'max_depth': 20, 'criterion': 'log_loss'. Tetapi jika dibandingkan dengan base model random forest, akurasi yang diberikan tidak mengalami perbedaan yang signifikan dimana base model mendapatkan akurasi 0.9257% pada testing, sedangkan ketika menggunakan hyperparameter hanya mendapatkan akurasi 0.9268%.
+
+![Confusion Matrix](https://github.com/user-attachments/assets/5af259e5-050e-4139-b63d-d48ea05751a7)
