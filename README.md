@@ -109,6 +109,7 @@ Hasil akurasi pada model Random Forest sebelum hyperparameter tuning:
 
 Setelah hyperparameter tuning:
 ![Hyparameter](https://github.com/user-attachments/assets/47b81f6c-c081-43ad-aedd-1a245ab05837)
+
 ![Hyperparameter Random Forest](https://github.com/user-attachments/assets/42662731-e3e5-4f30-b4d5-60322398ec33)
 
 Ditemukan bahwa parameter terbaik adalah 'n_estimators': 200, 'max_depth': 20, 'criterion': 'log_loss'. Tetapi jika dibandingkan dengan base model random forest, akurasi yang diberikan tidak mengalami perbedaan yang signifikan dimana base model mendapatkan akurasi 0.9257% pada testing, sedangkan ketika menggunakan hyperparameter hanya mendapatkan akurasi 0.9268%.
