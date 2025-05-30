@@ -20,15 +20,15 @@ Proyek ini bertujuan untuk mengembangkan model klasifikasi berbasis machine lear
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Banyak lembaga keuangan masih mengandalkan penilaian kredit konvensional yang tidak adaptif terhadap pola dan tren risiko baru.
-
-- Keterbatasan analisis manual membuat proses penilaian kredit rentan terhadap bias dan kesalahan prediksi.
+- Banyak individu yang menerima pinjaman keuangan padahal individu tersebut tidak layak untuk diberikan pinjaman sehingga menyebabkan  mengalami kerugian
 
 - Belum adanya sistem prediksi otomatis berbasis pembelajaran mesin yang secara akurat dapat mengklasifikasikan tingkat risiko gagal bayar dari calon peminjam.
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
+- Identifikasi fitur yang paling penting yang mempengaruhi apakah orang tersebut layak untuk mendapatkan pinjaman atau tidak
+
 - Mengembangkan model klasifikasi berbasis machine learning yang mampu memprediksi apakah seseorang kemungkinan akan menerima pinjaman atau tidak
 
 ### Solution statements
@@ -95,6 +95,26 @@ Pada tahap ini, beberapa algoritma klasifikasi machine learning digunakan untuk 
   a. Memerlukan tuning yang cermat: Algoritma ini memerlukan tuning parameter yang cermat untuk mendapatkan model yang optimal.
   
   b. Mudah overfitting: Gradient Boosting dapat cenderung overfit pada data training jika tidak dilakukan pengaturan parameter yang baik.
+
+## Hyperparameter Tuning
+
+Hyperparameter tuning dilakukan pada model untuk mendapatkan parameter terbaik yang mampu membantu model untuk meningkatkan akurasi, metode yang digunakan adalah RandomSearchCV dimana metode ini akan melakukan pengambilan parameter secara acak. Parameter yang akan digunakan sebagai berikut:
+
+Random Forest:
+- 'n_estimators': [100, 200] -> Jumlah decision tree yang dibuat dalam random forest, semakin banyak decision tree dapat meningkatkan kinerja model tetapi meningkatkan biaya pelatihan dan prediksi komputasi.
+
+- 'max_depth': [20, 30] -> Kedalaman maksimum decision tree dalam random forest, semakin tinggi nilai max_depth maka semakin kompleks decision tree dan semakin banyak kemungkinan split yang dilakukan
+
+- 'criterion': ['gini', 'entropy', 'log_loss'] -> Mengukur kualitas pemisahan pada setiap cabang pohon
+
+Gradient Boosting
+- 'loss': ['log_loss', 'exponential'] -> Bagaimana model memperkirakan dan memperbaiki kesalahan prediksi
+
+- 'learning_rate': [0.01, 0.1] -> Seberapa besar langkah yang diambil untuk memperbarui bobot model selama pelatihan, menentukan seberapa cepat atau lambat model belajar dari data pelatihan. Learning_rate ini merupakan ukuran dari perubahan bobot pada setiap iterasi berdasarkan gradien dari loss function
+
+- 'n_estimators': [100, 200] -> Jumlah decision tree yang dibuat dalam random forest, semakin banyak decision tree dapat meningkatkan kinerja model tetapi meningkatkan biaya pelatihan dan prediksi komputasi.
+
+- 'max_depth': [20, 30] -> Kedalaman maksimum decision tree dalam random forest, semakin tinggi nilai max_depth maka semakin kompleks decision tree dan semakin banyak kemungkinan split yang dilakukan
   
 ## Evaluation
 
