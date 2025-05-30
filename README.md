@@ -124,6 +124,8 @@ Gradient Boosting
 
 - Precision: Mengukur proporsi prediksi positif yang benar-benar positif.
 
+- F1-Score: Harmonik Rata-rata dari precision dan recall, yang cocok untuk label tidak seimbang.
+
 Hasil akurasi pada model Random Forest sebelum hyperparameter tuning:
 ![Base Model Random Forest](https://github.com/user-attachments/assets/2d5ab4f3-b76d-4ef2-bb7e-8d0c088d4a4e)
 
