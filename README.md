@@ -136,5 +136,5 @@ Ditemukan bahwa parameter terbaik adalah 'n_estimators': 200, 'max_depth': 20, '
 
 ![Confusion Matrix](https://github.com/user-attachments/assets/5af259e5-050e-4139-b63d-d48ea05751a7)
 
-##Kesimpulan
+## Kesimpulan
 Berdasarkan hasil klasifikasi menggunakan random forest mendapatkan akurasi 0.926%, dimana menunjukkan bahwa model mampu menghasilkan klasifikasi dengan baik antara orang yang layak untuk diberikan pinjaman dan tidak layak untuk diberikan pinjaman. Ditemukan beberapa hubungan antar fitur yang mempengaruhi diterima atau ditolaknya pengajuan pinjaman
