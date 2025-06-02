@@ -22,7 +22,7 @@ Proyek ini bertujuan untuk mengembangkan model klasifikasi berbasis machine lear
 Menjelaskan pernyataan masalah latar belakang:
 - Banyak individu yang menerima pinjaman keuangan padahal individu tersebut tidak layak untuk diberikan pinjaman sehingga menyebabkan  mengalami kerugian
 
-- Belum adanya sistem prediksi otomatis berbasis pembelajaran mesin yang secara akurat dapat mengklasifikasikan tingkat risiko gagal bayar dari calon peminjam.
+- Belum adanya sistem prediksi otomatis berbasis pembelajaran mesin yang secara akurat dapat mengklasifikasikan seseorang layak mendapatkan pinjaman uang atau tidak.
 
 ### Goals
 
@@ -36,7 +36,7 @@ Menjelaskan tujuan dari pernyataan masalah:
 - Melakukan hyperparameter tuning pada model untuk mengoptimalkan hasil klasifikasi dan meningkatkan akurasi prediksi
 
 ## Data Understanding
-Dataset yang saya gunakan berasal dari kaggle: [Loan Approval Classification](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data). Dataset ini berisikan 45000 data dengan 14 atribut berikut atribut yang dimiliki:
+Dataset yang saya gunakan berasal dari kaggle: [Loan Approval Classification](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data). Dataset ini berisikan 45000 data dengan 14 atribut, dimana pada data tidak ditemukan adanya *missing value* dan tidak ada data yang terduplikat, berikut atribut yang dimiliki:
 
 ### Variabel-variabel pada Loan Approval Classification dataset adalah sebagai berikut:
 - person_age: Umur orang
@@ -55,8 +55,6 @@ Dataset yang saya gunakan berasal dari kaggle: [Loan Approval Classification](ht
 - loan_status: Status persetujuan pinjaman
 
 ## Data Preparation
-- Missing Value: Penanganan terhadap data yang hilang
-- Duplicate: Menghapus data yang memiliki duplikasi agar tidak bias data dan tidak mengalami overfitting pada saat evaluasi model.
 - Encoding: Transformasi data dengan mengubah nilai kategori ke bentuk numerik.
 - Outliers: Dilakukan pengechekan agar tidak mengganggu kinerja model
 - Split Data: Membagi data latih dan data uji dengan proporsi 80:20
@@ -137,3 +135,6 @@ Setelah hyperparameter tuning:
 Ditemukan bahwa parameter terbaik adalah 'n_estimators': 200, 'max_depth': 20, 'criterion': 'log_loss'. Tetapi jika dibandingkan dengan base model random forest, akurasi yang diberikan tidak mengalami perbedaan yang signifikan dimana base model mendapatkan akurasi 0.9257% pada testing, sedangkan ketika menggunakan hyperparameter hanya mendapatkan akurasi 0.9268%.
 
 ![Confusion Matrix](https://github.com/user-attachments/assets/5af259e5-050e-4139-b63d-d48ea05751a7)
+
+##Kesimpulan
+Berdasarkan hasil klasifikasi menggunakan random forest mendapatkan akurasi 0.926%, dimana menunjukkan bahwa model mampu menghasilkan klasifikasi dengan baik antara orang yang layak untuk diberikan pinjaman dan tidak layak untuk diberikan pinjaman. Ditemukan beberapa hubungan antar fitur yang mempengaruhi diterima atau ditolaknya pengajuan pinjaman
