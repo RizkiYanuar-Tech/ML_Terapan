@@ -154,9 +154,11 @@ RMSE yang dihasilkan pada data latih dan data uji[Collaborative Filtering RMSE](
 
 Dengan RMSE: 0.1246 pada data latih dan RMSE: 0.12455 dijelaskan bahwa model ternyata dengan baik dapat memprediksi rating yang diberikan user terhadap buku yang direkomendasikan.
 
-Precision@5, Recall@5, NDCG@5 [Precision@K, Recall@K, NDCG@K](https://github.com/user-attachments/assets/92a3944b-7d45-404c-8285-0b691679b031)
+Precision@5, Recall@5, NDCG@5 [Precision@K, Recall@K, NDCG@K]
+(https://github.com/user-attachments/assets/92a3944b-7d45-404c-8285-0b691679b031)
 
-Output Top 5 Rekomendasi Buku[Output Rekomendasi Buku](https://github.com/user-attachments/assets/dfd25044-b234-4a34-8509-aa3e20db61f2)
+Output Top 5 Rekomendasi Buku[Output Rekomendasi Buku]
+(https://github.com/user-attachments/assets/dfd25044-b234-4a34-8509-aa3e20db61f2)
 
 
 Sedangkan pada recall@k menjelaskan bahwa ternyata dari kumpulan buku yang dimiliki hanya sebesar 0.0400% buku yang cocok direkomendasikan, sedangkan precision@k menjelaskan bahwa ternyata dari buku yang sudah diambil untuk direkomendasikan hanya sebesar 0.3068% item yang relevan dengan user, dan model hanya mampu mengurutkan item dengan bobot terbaik berada di paling atas hanya sebesar 0.4053%
