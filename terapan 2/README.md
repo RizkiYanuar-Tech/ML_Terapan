@@ -161,5 +161,5 @@ Output Top 5 Rekomendasi Buku[Output Rekomendasi Buku] (https://github.com/user-
 
 Sedangkan pada recall@k menjelaskan bahwa ternyata dari kumpulan buku yang dimiliki hanya sebesar 0.0400% buku yang cocok direkomendasikan, sedangkan precision@k menjelaskan bahwa ternyata dari buku yang sudah diambil untuk direkomendasikan hanya sebesar 0.3068% item yang relevan dengan user, dan model hanya mampu mengurutkan item dengan bobot terbaik berada di paling atas hanya sebesar 0.4053%
 
-##Kesimpulan
+## Kesimpulan
 Model collaborative filtering dapat memberikan rekomendasi yang cukup relevan kepada user walaupun hanya sebesar 0.3068%, model juga dapat memprediksi rating yang diberi user dengan lumayan baik.
