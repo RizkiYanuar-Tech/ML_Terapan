@@ -10,7 +10,9 @@ Sistem rekomendasi buku dirancang dengan mempertimbangkan kecepatan perubahan wa
 ## Referensi
 
 [1]	Proceedings of the 12th ACMIEEE-CS joint conference on Digital Libraries. ACM Digital Library, 2013.
+
 [2]	Innovative Computing Technology (INTECH), 2014 Fourth International Conference on : date 13-15 Aug. 2014. IEEE, 2014.
+
 [3]	K. Anwar, J. Siddiqui, and S. Saquib Sohail, “Machine Learning Techniques for Book Recommendation: An Overview.” [Online]. Available: https://ssrn.com/abstract=3356349
 
 ## Business Understanding
