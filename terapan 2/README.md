@@ -159,11 +159,13 @@ Pada tahap ini menggunakan metode Collaborative Filtering, untuk memberikan reko
 
 ## Hasil
 RMSE yang dihasilkan pada data latih dan data uji
+
 ![Collaborative Filtering RMSE](https://github.com/user-attachments/assets/5e68122f-0bfb-4ab6-adc4-7fc69cedceb9)
 
-Dengan RMSE: 0.1246 pada data latih dan RMSE: 0.12455 dijelaskan bahwa model ternyata dengan baik dapat memprediksi rating yang diberikan user terhadap buku yang direkomendasikan.
+Dengan RMSE: 0.1239 atau 1240 dijelaskan bahwa model ternyata dengan baik dapat memprediksi rating yang diberikan user terhadap buku yang direkomendasikan.
 
 Precision@5, Recall@5, NDCG@5 
+
 ![Precision@K, Recall@K, NDCG@K](https://github.com/user-attachments/assets/92a3944b-7d45-404c-8285-0b691679b031)
 
 Output Top 5 Rekomendasi Buku 
