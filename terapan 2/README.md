@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning Submission 2 - Muhammad Rizki Yanuar
+![image](https://github.com/user-attachments/assets/708d3907-7066-46ce-9fee-8d83cbd769d5)# Laporan Proyek Machine Learning Submission 2 - Muhammad Rizki Yanuar
 
 ## Domain Proyek
 Perpustakaan memiliki ruang rak yang terbatas, tetapi masih memiliki cukup buku yang cukup banyak hingga pemilihan buku menjadi sulit dan memakan waktu, tetapi jumlah buku dan pengguna tidak cukup untuk menghasilkan teknik kolaboratif tradisional yang mengandalkan data dalam jumlah besar[1].
@@ -146,6 +146,16 @@ Pada tahap ini menggunakan metode Collaborative Filtering, untuk memberikan reko
   a. (Cold Start) Sulit memberikan rekomendasi kepada pengguna baru atau item baru yang belum memiliki data peringkat yang cukup
   
   b. (Sparsity) Sebagian besar pengguna hanya berinteraksi dengan sebagian kecil item, sehingga data menjadi jarang dan rekomendasi menjadi kurang akurat.
+
+  Output Top-N Rekomendasi
+  Output Top 5 Rekomendasi Buku 
+| Title | Predicted_Rating |
+| ----- | ---------------- |
+|  Dune Messiah (Dune Chronicles #2)  |  Predicted Rating: 4.97 |
+|  J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings | Predicted Rating. 4.02 |
+|  One Hundred Years of Solitude | Predicted Rating: 4.00 |
+|  The Phantom Tollbooth | Predicted Rating: 3.98 |
+|  Atlas Shrugged | Predicted Rating: 3.96 |
   
 ## Evaluation
 
@@ -160,22 +170,14 @@ Pada tahap ini menggunakan metode Collaborative Filtering, untuk memberikan reko
 ## Hasil
 RMSE yang dihasilkan pada data latih dan data uji
 
-![Collaborative Filtering RMSE](https://github.com/user-attachments/assets/5e68122f-0bfb-4ab6-adc4-7fc69cedceb9)
+![RMSE](https://github.com/user-attachments/assets/d01becf0-4308-4c69-981c-b174bef7995f)
+
 
 Dengan RMSE: 0.1239 atau 1240 dijelaskan bahwa model ternyata dengan baik dapat memprediksi rating yang diberikan user terhadap buku yang direkomendasikan.
 
 Precision@5, Recall@5, NDCG@5 
 
 ![Precision@K, Recall@K, NDCG@K](https://github.com/user-attachments/assets/92a3944b-7d45-404c-8285-0b691679b031)
-
-Output Top 5 Rekomendasi Buku 
-| Title | Predicted_Rating |
-| ----- | ---------------- |
-|  Dune Messiah (Dune Chronicles #2)  |  Predicted Rating: 4.97 |
-|  J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings | Predicted Rating. 4.02 |
-|  One Hundred Years of Solitude | Predicted Rating: 4.00 |
-|  The Phantom Tollbooth | Predicted Rating: 3.98 |
-|  Atlas Shrugged | Predicted Rating: 3.96 |
 
 Sedangkan pada recall@k menjelaskan bahwa ternyata dari kumpulan buku yang dimiliki hanya sebesar 0.0400% buku yang cocok direkomendasikan, sedangkan precision@k menjelaskan bahwa ternyata dari buku yang sudah diambil untuk direkomendasikan hanya sebesar 0.3068% item yang relevan dengan user, dan model hanya mampu mengurutkan item dengan bobot terbaik berada di paling atas hanya sebesar 0.4053%
 
